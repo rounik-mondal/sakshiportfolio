@@ -330,7 +330,7 @@ body.lock-scroll {
     cursor: default;
     pointer-events: all;
     font-family: "brick";
-    color: #e1e1e1;
+    color: #966e50;
     /* Ensure minimum dimensions for proper hover detection */
     min-width: 1px;
     min-height: 1px;
@@ -1870,3 +1870,5 @@ body.lock-scroll {
     height: 5vh;
   }
 }
+
+

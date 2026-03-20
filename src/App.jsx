@@ -4,7 +4,7 @@ import SkillsSection from "./components/SkillsSection";
 import ProjectsSection from "./components/ProjectsSection";
 import ContactSection from "./components/ContactSection";
 import HireModal from "./components/HireModal";
-import StatusToast from "./components/StatusToast";
+// import StatusToast from "./components/StatusToast";
 import { portfolioData } from "./data/portfolioData";
 import { usePortfolioAnimations } from "./hooks/usePortfolioAnimations";
 
@@ -57,8 +57,8 @@ export default function App() {
   });
 
   useEffect(() => {
-    const media = window.matchMedia("(prefers-color-scheme: dark)");
-    setIsDarkMode(media.matches);
+    // const media = window.matchMedia("(prefers-color-scheme: dark)");
+    setIsDarkMode(false);
   }, []);
 
   const handleHireContinue = () => {
@@ -78,11 +78,11 @@ export default function App() {
         firstName={portfolioData.personal.firstName}
         lastName={portfolioData.personal.lastName}
       />
-      <StatusToast
+      {/* <StatusToast
         message={portfolioData.messaging.status}
         visible={toastVisible}
         onClose={() => setToastVisible(false)}
-      />
+      /> */}
       <Cursor />
 
       <HeroSection
@@ -106,6 +106,8 @@ export default function App() {
         cloudImage={cloudImage}
         patternImage={patternImage}
       />
+      <br />
+      <br />
 
       <ProjectsSection
         projects={portfolioData.projects}

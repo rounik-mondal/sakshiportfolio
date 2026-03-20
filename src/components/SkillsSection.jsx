@@ -10,9 +10,9 @@ export default function SkillsSection({ data, onNavigate, sectionBackground, clo
         <div id="skillcontainer">
           <div id="skilltitle">
             <h1>
-              SKILLS
+              SKILLS&nbsp;
               <br className="smvisible" />
-              AND
+              AND&nbsp;
               <br className="smvisible" />
               NUMBERS
             </h1>
@@ -79,9 +79,6 @@ export default function SkillsSection({ data, onNavigate, sectionBackground, clo
                   </div>
                   <div className="cgpadata">
                     <h2 id="skilltext">CGPA</h2>
-                  </div>
-                  <div className="cgpadata">
-                    <h2 id="skillname">Bachelor of Technology</h2>
                   </div>
                   <div className="cgpadata">
                     <h2 id="skillname">Computer Science & Engineering</h2>
@@ -221,12 +218,6 @@ export default function SkillsSection({ data, onNavigate, sectionBackground, clo
               </div>
             </article>
           </div>
-        </div>
-
-        <div id="homebuttonsec">
-          <a href="#herosection" onClick={(event) => onNavigate(event, "#herosection")} aria-label="Back to top">
-            <HomeIcon id="homeicon" />
-          </a>
         </div>
       </div>
       <img id="skillsectionbg" src={sectionBackground} alt="" />

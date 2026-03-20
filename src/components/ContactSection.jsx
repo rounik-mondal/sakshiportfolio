@@ -48,9 +48,9 @@ export default function ContactSection({
               data-cursor={item.description}
             >
               <div className="contact-card-copy">
-                <span className="contact-card-kicker">{item.label}</span>
+                <span className="contact-card-kicker">..</span>
                 <h2>{item.label}</h2>
-                <p>{item.description}</p>
+                <h3>{item.description}</h3>
               </div>
               <a href={item.href} target="_blank" rel="noreferrer" aria-label={`Open ${item.label}`}>
                 <div className="contacticon" id={item.id}>
